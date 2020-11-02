@@ -2,7 +2,7 @@ import { makeStyles } from '@material-ui/core/styles';
 
 export default makeStyles({
     media: {
-        height: 250,
+        height: '200px',
     },
     border: {
         border: 'solid',
@@ -32,7 +32,7 @@ export default makeStyles({
         padding: '0 16px',
     },
     cardActions: {
-        padding: '0 16px 8px 16px',
+        //padding: '0 16px 8px 16px',
         display: 'flex',
         justifyContent: 'space-between',
     },

@@ -1,0 +1,31 @@
+*{
+    margin: 0;
+  }
+
+  html body {
+        overflow-x: hidden;
+  }
+
+  .App_header{
+    position: sticky;
+    top: 0;
+    z-index: 1;
+    background-color: white;
+    object-fit: contain;
+    border-bottom: 1px solid lightgray;
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    height: 20px;
+  }
+
+  .Quote{
+    height: 30vh;
+    justify-content: center;
+    display: flex;
+    align-items: center;
+  }
+
+  .Image{
+      width: 50px;
+  }

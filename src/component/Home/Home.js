@@ -10,47 +10,48 @@ const Home = () => {
         {
             imageUrl: "https://alan.app/voice/images/previews/preview.jpg",
             description: "",
-            title: "",
+            title: "hello",
             url: ""
         },
         {
             imageUrl: "https://alan.app/voice/images/previews/preview.jpg",
             description: "",
-            title: "",
+            title: "hello",
             url: ""
         }, {
             imageUrl: "https://alan.app/voice/images/previews/preview.jpg",
             description: "",
-            title: "",
+            title: "hello",
             url: ""
         },
         {
             imageUrl: "https://alan.app/voice/images/previews/preview.jpg",
             description: "",
-            title: "",
+            title: "hello",
             url: ""
         }
     ])
     return (
-        <Grow in>
-            <Grid className={classes.container} container alignItems="center" spacing={3}>
-                {data.map((project) => (
-                    <Grid item xs={12} sm={6} lg={3} style={{ display: 'flex', justifyContent: 'center' }}>
-                        <Card>
-                            <CardActionArea href={project.url} target="_blank">
-                                <CardMedia className={classes.media} image={project.imageUrl} />
-                                <div className={classes.details}>
-                                    <Typography variant="body2" color="textSecondary" component="h2">{project.title}</Typography>
-                                </div>
-                                <CardContent>
-                                    <Typography variant="body2" color="textSecondary" component="p">{project.description}</Typography>
-                                </CardContent>
-                            </CardActionArea>
-                        </Card>
-                    </Grid>
-                ))}
-            </Grid>
-        </Grow>
+
+        <Grid className={classes.container} container alignItems="center" spacing={3}>
+            {data.map((project) => (
+                <Grid item xs={12} sm={6} lg={3} md={6
+                } style={{ display: 'flex', justifyContent: 'center' }}>
+                    <Card style={{ width: "50%" }}>
+                        <CardActionArea href={project.url} target="_blank" >
+                            <CardMedia className={classes.media} image={project.imageUrl} />
+                            <div className={classes.details}>
+                                <Typography variant="body2" color="textSecondary" component="h2">{project.title}</Typography>
+                            </div>
+                            <CardContent>
+                                <Typography variant="body2" color="textSecondary" component="p">{project.description}</Typography>
+                            </CardContent>
+                        </CardActionArea>
+                    </Card>
+                </Grid>
+            ))}
+        </Grid>
+
     )
 }
 

@@ -2,6 +2,8 @@ import React from 'react';
 import { NavLink } from 'react-router-dom';
 
 
+
+
 const Navigation = () => {
     return (
         <header>
@@ -12,7 +14,7 @@ const Navigation = () => {
                     listStyle: "none"
                 }}>
                     <li>
-                        <NavLink to="/" exact >Home</NavLink>
+                        <NavLink to="/" exact style={{ marginRight: "10px" }}>Home</NavLink>
                     </li>
                     <li>
                         <NavLink to="/About" exact >About</NavLink>
